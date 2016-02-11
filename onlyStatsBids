@@ -1,0 +1,363 @@
+allMethods
+  
+  
+  
+Rbrul  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+mean  
+  
+  
+  
+  
+yes, precision and recall, mean, sd,  
+ anova, fstatistc, Varimax (orthogonal) rotation , Cronbachs alpha, principal component analysis 
+ novel model, likelihood ratio test, MLE, growth curves, regression analysis, simulation, clustering coefficient, network analysis, paired ttest, Zscores 
+ 2chi2 anova, 
+ Bayesian analysis function for anova designs , Onesample ttests, Cohens d , regression analyses, Levenes Test for Equality of Variances, SIMPLE model (Brown et al., 2007), Pearsons r,Bayesian statistics, anova< 
+mean anova, ttest, repeated measures anova< 
+mean, sd, mixed effect model, correlation (Pearsons R), 
+ mixed linear model,Pearson correlation r, mixed model analysis, ttest 
+ KolmogorovSmirnov test, anova, ttest, KolmogorovSmirnov test,MannWhitney 2 test, Wilcoxon Signed Rank test 
+mean, sd, f statisitcs, ttest, correlation, 
+CI, mean, "above chance"  
+ anova, sd, mean, Fisher LSD post hoc test, pearsons R, linear models, generalized mixedeffects model, multiple regression, Rsquare, Sobels Test for mediation, anova, regression model, 
+ Students t test. ‚Latent Dirichlet Allocation, Extended String Subsequence Kernel
+  projectspecific
+precision, recall  
+mean Spearman scores distributional semantic models
+  balanced Fmeasure
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+consensus accuracy,  Hidden Markov Model (HMM)
+  project specific
+ box plots, Factorial Hidden Markov Models, variational approximation
+  simulation
+Maximum Mutual Information (MMI) [2], [3], [4], Minimum Classification Error (MCE) [5], [6], and Minimum Phone Error (MPE)  HMMs, Maximum Likelihood (ML),
+  HMMs, minimum classification error (MCE), support vector machine (SVM) , Fisher kernel (FK) [11] and likelihood ratio kernel (LRK),GMM, POSTERIOR PROBABILITY WEIGHTED DYNAMIC KERNELS,
+  parametric sound field model
+identification rate (IDR), miss rate (MR), false alarm rate (FAR), identification accuracy (IDA) (The first three of the above are collectively called the reliability measures and the others are called the accuracy measures.)  
+  factorial model, project specifc model, Spatial Generative Model,
+SNR WilcoxonMannWhitney tests 
+  HMMs, Polyphone Decision Tree Specialization,MFCC
+ Wilcoxon paired test Linear predictive coding, Gaussian Mixture Model (GMM)
+meansquare error, SNR  
+precision and recall  dynamic texture mixture (DTM) models (i.e., linear dynamical systems), GMM, Multiclass Logistic Regression
+  
+  
+  
+  
+mean  
+mean  
+mean  
+mean,  
+Cronbachs alpha, mean, sd, ztest, chi2, Mann Whitney U test for pairwise comparison 
+  
+ anova, ) independent sample ttests,pairwise comparisons 
+mean, sd Cronbachs alpha, ttest, correlation, 
+mean, sd ftest, Generalized linear mixed modeling, zscores 
+mean, sd, anova, ttest, pearsons r, hierarchical regression analyses
+mean, sd, ttest, pearsons r, anova, 
+ Cronbachs alpha coefficient, Pearson correlations, anova, 
+ Cronbachs alphas, Manova , Wilks lambda, Bartletts test of sphericity, chisquare, ttest 
+mean, sd pearsons r 
+ pearsons r, anova, 
+mean  
+  
+  
+  entropy
+  
+mean, sd, range, ANCOVA, ttest, correlation, 
+mean,  
+mean, Pearson ChiSquare statistics 
+mean  
+mean, sd, ttest 
+  
+  
+  
+  
+  
+  
+onetailed Fisher Exact tests, Chisquare test, Pearsons r, Wilcoxon rank sum test  
+mean,sd, standard errors Pearsons r, LMM 
+mean, sd, Skew, Kurtosis, Reliability ttesting, correlation, Fishers test 
+Cohens d, mean, 10,000 bootstrap samples 
+mean, sd, Welchs t, anova, 
+ twotailed paired ttest, lmer, Wilcoxon matchedpairs sign rank tests, chi2 
+standard error anova, Bonferroni correction, ttest, mixeddesign anova 
+mean, sd, Cohens d ttest, correlation, anova, onetailed test 
+ repeated measures anova , Tukeys honestly significant difference [HSD], Friedmans anova , chi2, Wilcoxon tests, Bonferronicorrected alpha 
+mean, sd, chi2, mixed logit regression,ttest 
+mean, linear mixedeffects model, Tukeyadjusted HSD, ttest, mixeddesign anova, 
+mean, med, sd the comparative fit index (CFI), root mean square error of approximation (RMSEA), standardized root mean square residual (SRMR), the Akaike information criterion (), and chi2, pearsons r, Multilevel (i.e., randomintercept) generalized linear models confirmatory factor analysis (CFA) models
+mean Linear Mixed Effects model 
+ pearsons r, novel modelling, minimum distance algorithm, Quadratic Discriminant Analysis
+median, mean  Bayesian hierarchical logistic regression
+ PCA, Linear mixed effects models 
+MEAN anova, Manova, Posthoc Tukey HSD, 
+mean, sd, General Linear Model (GLM) Analyses of Variance (anovas), 
+mean  
+mean  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+mean, odds, Fishers exact test, mixed effects logistic regression 
+mean, GoldVarb analysis, Chisquare 
+  
+mean, sd, mixedmeasures anova 
+mean, sd, ttest, Pearson correlation coefficients, 
+mean, sd, generalized linear mixed model with a logit link, chi2, R2, GoldmanFristoe Test of Articulation 
+mean, sd, Hotellings T2, Cohens D, ttest 
+mean, sd, pearsons r, anova, ttest, Principal component analysis, Revised Standardized Difference Test (RSDT) 
+mean, sd, R2, ML = maximum likelihood; LL = log likelihood;  = Akaike information criterion; BIC = Bayesian information criterion. 
+mean, sd feature analysis, anova, BonferroniHolmes , Fishers 
+mean, sd, anova, ttest. 
+ oneway analysis of variance (anova) , StudentNeumanKeuls (SNK) post hoc test, chi2, Bonferronicorrected p, oneway anova, 
+mean, sd, ttest, mixedmodel analysis of variance, chi2, 
+d prime, mean, sd, twoway repeated measures analysis of variance, mixedeffects models with a logistic link function, odds ratio,chi2, Classification and regression tree 
+mean, sd, chi2, mixedeffects logistic regression, likelihoodratio test and the Akaike Information Criterion, 
+ bivariate kernel density estimation, linear discriminant analysis , pearsons r, chi2, 
+mean, sd, pearsons r, anova, 
+ anovas, 
+ Bayesian differences in magnitude of condition effects 
+mean oneway analyses of variance 
+mean, sd, ttest, cohens d, ztest, Individual Component Analysis 
+mean, sd, Pearsons correlation coefficient, Two OneSided Test, linear regression model 
+ ttest, chi2 novel methods,
+mean, sd, pearsons r, 
+mean, sd, chi2 or ttest, pearsons r, 
+mean, sd, ttest, pearsons r, Bonferroni correction, twoway mixed repeated measures anova , 
+  novel model
+mean, sd, d, logistic regression , twoway repeated measures analysis of variance , ttest, Oneway anova, post hoc comparisons with Bonferroni adjustments 
+mean, sd, ttest, anova , 
+  
+ Linear regression, multiple logistic regression model, analysis of deviance, chi2 , 
+ anova, Gaussian model without integration, Gaussian late MLE model, The FLMP,
+ chi2, bysubject analysis of variance, linear mixed effects models 
+mean, sd, two separate repeatedmeasures analyses of variance (anovas), ttest, linear regression 
+ Ftest twodimensional Gaussian distribution
+mean, sd, hierarchical linear regression model, ttest, 
+ RManova, post hoc Bonferroni 
+ ttest, ShapiroWilk test, Wilcoxon SignedRanks test, MannWhitney, KruskalWallis , Pearsons R, 
+ Threeway analysis of variance (anova) with repeated measures Modelbased mixing time estimator, Abels mixing time estimator
+ smoothing spline analysis of variance SSanova, Tukey post hoc comparisons, mixed effects regressions 
+mean, sd, twoway anova, Heteroscedatic ttest 
+ Linear mixedeffects analysis, anova, Markov Chain Monte Carlo, chi2, Wilkss Lambda, linear discriminant analysis 
+ chi2, Pearsons test statistic with Yates continuity correction 
+proportion, mean, mixedeffect model , Restricted Maximum Likelihood , anova 
+probaility density, repeated measures anova, Bonferroni corrected ttests 
+  
+  
+ ttest, 
+mean,  
+  
+  
+  
+mean, twotailed ttest, pearsons r, Single sample ttests , 
+mean, Spearmans r, chi2, Nagelkerke R2, Pearsons, r, McNemar test, mixed effects logistic regression model 
+Precision and Recall , discriminatory power.  Naive Bayes model
+mean,  
+  
+  
+mean, st. error Fstatistic, lmer, ttest, Markov chain Monte Carlo method 
+mean, standard error logit models with mixed effects, (zscores, Generalized Linear MixedModel, GLMM, Logit models (GLM) 
+mean, intraclass correlationcoefficient, Generalized LinearLatent and Mixed Model , ttest, multivariate logistic regression 
+ repeatedmeasures anova, 
+mean, range, sd, . Coefficient of variance Pearsons productmoment correlation, twoway anova, pairedsamples ttests (twotailed) 
+mean, sd anova, 
+mean, sd, logistic mixedeffects model, ttest, oneway anova, 
+mean, sd, ttest, general linear model, repeated measure analyses of variance (anovas) 
+mean, sd, median, Wilcoxon rank sum tests, ShapiroWilk tests, Gsquare 
+proportion chi2 
+  
+  
+accuracy,  
+F1, recall, precision, twosided Wilcoxon signed rank sum test e Explicit Semantic Analysis (ESA), Latent Dirichlet Allocation (LDA)
+error, mean  
+mean, accuracy twotailed test HMM
+counts  
+recall, precision, Fleiss Kappa 
+precision, recall, and Fscore bootstrapping, 
+sd,  
+ binomial regression 
+mean, Normalized Euclidean distance  
+mean, chi2, logistic regression model 
+mean, Rbrul mixedeffects analysis, multivariate analysis 
+  
+  
+  
+logistic mixed model, spearmans correlation, exact binomial test, perceptual distance, ttest  
+Signal Detection Theory, dprime, multiple linear regression, mixed effects multiple logistic regres  
+Biased Choice Model (BCM), linear mixedeffects regression analysis, ztest, likelihood ratio test  
+  
+  
+  
+  
+  
+mean, sd, Paired samples ttests, Linear mixedeffects models, Cohens d 
+mean, sd, mixed effects modelling, ttest, anova, pearsons r 
+  
+mean, sd, singledf likelihood ratiotests, pearsons r, maximum likelihood estimation, multilevel linear mixede"ects analysis 
+ chi2 test (Pearson 1900), the loglikelihoodratio test (Dunning 1993) and Fishers exact test (Fisher 1922), dispersionaware test, Wilcoxon ranksum test 
+  
+mean  
+  
+mean, ci, sd, IQR mixedeffects regression 
+  
+  
+  
+  
+  
+  
+  
+accuracy, mean  
+means, precision, recall and F1  
+mean, factor analysis bootsrapping (?), multiple linear regression 
+Precision, recall, Fmeasure, and accuracy Fishers Exact Test, 
+  Hidden Markov Model (HMM), ngram, SMT, and finite state transducers (FST)
+mean, standard error mixedeffects logit model 
+  
+mean TTEST, WILCOXON TEST 
+  
+  
+  
+  
+  
+  
+  
+  
+mean, repeated measures anova, independent samples ttests, Linear regressions 
+coefficient of determination Wilcoxons signed ranktest, Wilcoxons ranksum test, 
+ something but cant access 
+average, ci, anova, mixed model logistic regression 
+average, Levenes Test anova, pairwise ttests with Bonferroni correction 
+mean, standard error linear/quadratic/cubic models, pearsons r, linear regression, ttest,Pearsons chi2 test with Yates continuity correction, anova, Tukeys multiple comparison test, linear mixed model 
+  
+  
+probability density, mean, logistic mixedeffects models, nonparametric paired ttests, Wilcoxon signed rank test, nonparametric Kendall  rank 
+means  
+  
+  
+  
+mean, sd oneway anova, Twotailed paired ttest, cloze tests, pearsons r, 
+mean, sd, ci threeway anova 
+mean, sd, anova 
+mean, sd crossed random effects modeling (CREM), paired sample ttest 
+mean, sd, twoway anova 
+mean, standard error mixed design anova,pairedsamples ttests 
+root mean square error (RMSE) Oneway anova, independent ttests Marking and Morphing model
+mean, sd Linear mixed models 
+Accuracy, mean, sd, repeatedmeasures anova, Paired samples ttests 
+mean, ci, oneway betweenparticipants anova, Independent sample ttests, Repeated Measures anova 
+  
+  
+  
+  
+  
+  
+  
+  
+ Cliffs Î´, a cumulative link model, ttest 
+mean, se, linear mixedeffects regression, chi2 
+mean linear mixedeffectsregression models, ttest, chi square, correlation 
+mean, sd ttest, anova 
+mean  
+mean, sd anova 
+mean mixed effects model 
+  
+  
+  
+mean,  
+mean, sd, Correlation Matrix recursive regression model, R2, oneway anova path model, structural equation model
+bootstrapbased confidence intervals Wilcoxon ranksum tests, Wilcoxon signrank tests Discriminatory analysis
+means, normal Correlation coefficients Gaussian mixture model classifier with universal background model
+  hidden trajectory model
+signaltonoise ratios Paired ttest, z scores probabilistic linear discriminant analysis (PLDA)
+normalized Bayes error rate (NBE)  
+  support vector machines (SVM) (Dehak et al., 2011 and Han et al., 2013), probabilistic linear discriminant Analysis (PLDA) (Prince and Elder, 2007, GarciaRomero and EspyWilson, 2011 and McLaren et al., 2013), adaptive Gaussian backend (AGB) (Lawson et al., 2013), neural networks (NN) (Lawson et al., 2013 and MatÄ›jka et al., 2012), and the simple yet effective cosine distance (CD) based scoring (Dehak et al., 2011) which is typically combined with LDA (Fukunaga, 1990) followed by withinclass covariance normalization (WCCN)
+Fscore, principal component analysis  novel model
+segmental signal to noise radio (SSNR) improvement, the loglikelihood ratio  multichannel algorithm
+false acceptance rate, equal error rate, rsquare, PLDA Gaussian mixture model  universal background model, ivector system, cosine scoring , probabilistic linear discriminant analysis (PLDA)
+false acceptance (FA), false rejection (FR)  PLDA, jiont factor analysis
+False Acceptance Rate (FAR) and False Rejection Rate (FRR)  novel model
+  
+  
+  
+ Onesample t tests, Onesample t tests, Welchs F , mixed anova , Bonferroni pairwise comparisons 
+Accuracy Multinomial logistic regression, odds ratios , 
+ anovas , proportions of positive responses 
+ fully specified GLME 
+ oneway anova, Tukeys LSD , pearsons r, anova, multiple regression 
+ anova, Tukey HSD tests , Regression analyses, Pearson correlations, Fishers LSD 
+ mixedeffects anova, general linear model 
+  
+  
+  
+percentages  comparison of neural networks and countbased models
+Kendalls  (for annotator agreemnt)  Hidden Markov Model, d SVM rankingmodels
+  Logoddsratio analysis
+F1score and overall accuracy (Acc.) ttest Latent Dirichlet Allocation (
+mean, sd linearregression model Latent Dirichlet Allocation, linear regression model
+means, percents,  
+ binomial test novel model
+ Kendalls  correlation 
+avg, precision sign test 
+perplexity, loss  MRR
+NPMI, Purity and NMI , F1  Dirichlet Multinomial Mixture, e Latent Dirichlet Allocation (LDA)
+average, minimum, andmaximum pairwise similarities. onetailed nonparametric bootstrap resampling using 10,000 iterations Neural Network
+  algorithm devlopment
+ 1000dimensional skipgram vectors 
+ correlation 
+percent increase, pseudorecall  algorithms
+confidence interval  SVM, Ablation analysis
+g precision, recall and F1score paired bootstrap test 
+  DBN, LFR
+coherence measures, Endtoend performance  
+F1 (precision and recall), Ï†3CEAF  
+precision, recall, f1 bootstrap sampling, nonparametric sign test Independent Bayesian ClassifierCombination
+  latent Dirichlet allocation
+Precision, Recall and F1  
+Perplexity Akaike Information Criterion, Binomial test linear interpolation method, DAG, histogram model
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

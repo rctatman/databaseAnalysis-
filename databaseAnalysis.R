@@ -1,6 +1,6 @@
 # analysis of database
 
-# libraries
+# libraries ----
 library(vecsets)
 # text mining packages; these are a big install, only do it if you need them  
 # Needed <- c("tm", "SnowballC", "RColorBrewer", "ggplot2", "wordcloud", "biclust", "cluster", "igraph", "fpc")   
@@ -19,7 +19,7 @@ library(Rcampdf)
 library(cluster)  
 library(fpc)
 library(igraph)
-library(EcoSimR)    # load EcoSimR library
+library(EcoSimR)    #EcoSimR library only used for looking at co-occurance, not in paper
 
 # read in data 
 data <- read.csv(file = "/home/rachael/Dropbox/Papers/accepted/LSI_pointing_stats/methods.csv",
@@ -33,6 +33,8 @@ head(journals)
 
 individualMethods <- read.csv(file="Dropbox/Papers/accepted/LSI_pointing_stats/IndividualMethods.csv", header = F)
 head(individualMethods)
+
+# general analysis and summery of data ----
 
 # count the number of article w/ and w/out stats by journal 
 hadStatsbyJournal <- table(data$Journal, data$No.stats)
@@ -106,23 +108,23 @@ lmerList <- grepl("*lmer*", data$Inferential)
 tableOfLm <- cbind(regressionList, linerList, lmerList) 
 count(apply (tableOfLm, 1, any)) # count of rows with at least one serach term
 
-# Common methods in phonetics 
+# Common methods by subfield
 phoneticsJournals <- journals[journals$Subfield == "Syntax",]$Journal
 for(i in 1:length(phoneticsJournals)){
   print(data[data$Journal == phoneticsJournals[i],])
 }
 
-
+# text mining ----
 # looking at all the different individual methods using text mining I'm
 # partially following this guide:
 # https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html
-# we
 
-docs <- Corpus(DirSource("Dropbox/Papers/accepted/LSI_pointing_stats/Untitled Folder/"))
+docs <- Corpus(DirSource("/home/rachael/Dropbox/Papers/accepted/LSI_pointing_stats/Untitled Folder/"))
 docs <- Corpus(DirSource("C:/Users/Rachael/Dropbox/Papers/accepted/LSI_pointing_stats/Untitled Folder/"))
 summary(docs)
 inspect(docs[2])
 
+# preprocessing. This is where I'm concatinating terms
 for (j in seq(docs))
 {
   docs[[j]] <- gsub("linear model", "lm", docs[[j]])
@@ -174,37 +176,7 @@ wordcloud(names(freq), freq, min.freq=5, )
 set.seed(142)   
 wordcloud(names(freq), freq, min.freq=5, scale=c(8, 1), colors=brewer.pal(6, "Dark2"))   
 
-# playing around with hierarchical clusteirng 
-dtmss <- removeSparseTerms(dtm, 0.04) # This makes a matrix that is only % empty space, maximum.   
-inspect(dtmss)  
-sort(colSums(as.matrix(dtmss)), decreasing=TRUE)
-
-# can we get hierarichal clustering iwth only the most common terms? 
-# multipleInstnaces <- dtmss$v > 1 # or dtmss[[3]] > 1
-# dtmss <- lapply(dtmss, "[", multipleInstnaces)
-# dtmss <- removeSparseTerms(dtmss, 0.04)
-# after some futxing: nope
-
-
-# maxlen <- max(sapply(x,length))
-# lapply(seq(maxlen),function(i) Reduce(intersect,lapply(x,"[[",i)))
-
-# bllluuugghhh, this is all silly
-d <- dist(t(dtmss), method="euclidian")   
-fit <- hclust(d=d, method="ward")   
-fit   
-plot(fit, hang=-2)   
-groups <- cutree(fit, k=5)   # "k=" defines the number of clusters you are using   
-rect.hclust(fit, k=5, border="red") # draw dendogram with red borders around the 5 clusters 
-sort(groups)
-
-sort(groups[multipleInstnaces])
-
-# and now k means
-d <- dist(t(dtmss), method="euclidian")   
-kfit <- kmeans(d, 4)   
-clusplot(as.matrix(d), kfit$cluster, color=T, shade=T, labels=2, lines=0)   
-
+# making cooccurance matrix ----
 # ok, now we want to go through and make a column for every repeated term
 # then, using fuzzy matching, find the rowqs that contain each term and put that info in a new column
 # finally, use the columns we've just made to make a co-occurance thigns
@@ -220,22 +192,6 @@ data$allMethods <- removePunctuation(as.character(data$allMethods))
 data$allMethods <- removeNumbers(as.character(data$allMethods))
 data$allMethods <- tolower(as.character(data$allMethods))
 methodsMultipleOccurance <- unique(methodsMultipleOccurance)
-
-# preprocessing 
-individualMethods <- read.csv(file="Dropbox/Papers/accepted/LSI_pointing_stats/IndividualMethods.csv", header = F)
-individualMethods$V1 <- gsub("sd", "standard_deviation", individualMethods$V1)
-individualMethods$V1 <- gsub("t test", "t_test", individualMethods$V1)
-individualMethods$V1 <- gsub("s ", " ", individualMethods$V1)
-individualMethods$V1 <- removePunctuation(as.character(individualMethods$V1))
-individualMethods$V1 <- removeNumbers(as.character(individualMethods$V1))
-individualMethods$V1 <- tolower(as.character(individualMethods$V1))
-individualMethods$V1 <- gsub("ttests", "ttest", individualMethods$V1)
-individualMethods$V1 <- trim(individualMethods$V1)
-summary(individualMethods)
-methodsForCoccur <- unique(individualMethods$V1)
-
-head(methodsForCoccur)
-
 
 # if stemming
 data$allMethods <- stemDocument(as.character(data$allMethods))
@@ -256,7 +212,7 @@ table(matrixForCocurrance)
 # write this puppy to disk so we can mess with it later 
 write.table(matrixForCocurrance, file = "/home/rachael/Dropbox/Papers/accepted/LSI_pointing_stats/matrixForCocurrance")
 
-# now to analyze and visualize co-vatiation
+# visualize co-vatiation -----
 # this code taken from http://planspace.org/2013/01/30/visualize-co_occurrence/
 topMatrix <- matrixForCocurrance[, colSums(matrixForCocurrance) > 10]
 topMatrix <- topMatrix[,2:dim(topMatrix)[2]]
@@ -306,17 +262,20 @@ plot(graph2,
 subcomponent(graph2, "anova")
 subcomponent(graph2, "sum")
 is_separator(graph2, "model")
-min_separators(graph2)
+sapply(colnames(topMatrix), FUN = is_separator, graph = graph2)
+length(colnames(topMatrix))
+
+limin_separators(graph2)
 articulation_points(graph2) # there are no articulation points, so the vertex connectivity is at least 2
 graph.cohesion(graph2)
 vertex.connectivity(graph2)
 
-
-
+# this takes a while to load, interactive plot
 tkplot(graph2, vertex.color = "green", 
        vertex.size=total_occurrences2 * .5, 
        edge.width=E(graph2)$weight * .2)
 
+# quantifying covaritation ----
 # ok, now that we have a high-level idea of what's going on in terms of co-occurance, let's quantify it a bit
 # this is based on https://cran.r-project.org/web/packages/EcoSimR/vignettes/CoOccurrenceVignette.html
 
@@ -357,8 +316,6 @@ head(OrderOfCoccur)
 # newMatrix <- newMatrix[!duplicated(newMatrix), ] #remove duplicate rows
 # head(newMatrix)
 
-
-
 v_ratio(topMatrix) # this calculates "average covariance in association between all possible pairs" 
 v_ratio(matrixForCocurrance) # In a random matrix, this ratio should be close to 1.0, 
 # The V-ratio will equal the minimum value of 0.0 when all sites contain identical numbers of species
@@ -375,6 +332,4 @@ plot(myModel,type = "cooc")
 plot(myModel,type = "burn_in")
 
 plot(topMatrix)
-
 checker(topMatrix)
-v_ratio and c_score

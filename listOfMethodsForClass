@@ -1,0 +1,29 @@
+Term	InDatabase
+mean	mean
+standard deviation	sd
+standard error	standard error
+Bootstrapping	bootstrap
+T-test	ttest
+ANOVA	anova
+Cohen’s d	Cohens d
+Cronbach’s alpha	Cronbachs alpha
+Tukey’s honestly significant difference	hsd
+Bonferroni correction	Bonferroni
+Pearson’s r	pearson's r
+Spearman’s ρ	spearman
+χ2	chi2
+Fisher’s test	Fisher's
+Wilcoxon rank sum test	rank sum 
+Wilcoxon signed-rank test	signed rank	
+Linear regression	linear regression
+r squared	r2
+general linear model	General Linear Model
+multiple regression	multiple regression 
+multiple regression	multiple linear regression
+mixed effect model	mixed effect
+Linear Mixed Effects model	Linear mixedeffects
+Linear Mixed Effects model	lmer
+Generalized linear mixed modeling	GLMM
+Generalized linear mixed modeling	generalized mixedeffects
+logistic mixed-effects models	logistic mixedeffects model
+

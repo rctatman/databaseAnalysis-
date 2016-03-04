@@ -333,3 +333,38 @@ plot(myModel,type = "burn_in")
 
 plot(topMatrix)
 checker(topMatrix)
+
+# getting articles for specfic methods ----
+# part of cirriculum design 
+
+methodsForClass <- read.csv("Dropbox/Papers/accepted/LSI_pointing_stats/listOfMethodsForClass", sep = "\t",
+                              header = T)
+methodsForClass
+head(methodsForClass)
+journalList <- data.frame(Article=character(), 
+                          Authors=character(),
+                          Journal=character(),
+                          Method=character(), 
+                          stringsAsFactors=FALSE) 
+for(i in 1:length(methodsForClass$InDatabase)){
+  term <- paste("*", methodsForClass$InDatabase[i], "*", sep = "")
+  
+  # serach for method
+  findList <- grepl(term, data$allMethods)
+  if(sum(findList) > 0 ){
+    journalListAdd <- cbind.data.frame(Article = data$Article[findList],
+                                       Authors = data$Author.s.[findList],
+                                       Journal = data$Journal[findList],
+                                       Method= methodsForClass$Term[i])
+    journalList <- rbind(journalList, journalListAdd)
+  }
+  else{
+    print("Error, term not found:")
+    print(term)
+  }
+}
+
+head(journalList)
+dim(journalList)
+
+write.csv(journalList, "PapersByMethods.csv")
